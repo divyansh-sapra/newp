@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+    <div class="header">
+        <input id="signUpButtonClick" class="topButtons" type="button" onclick="openSignUpButton()" value="Sign Up">
+        <input id="loginButtonClick" class="topButtons" type="button" onclick="openSignIn()" value="Sign In">
+        <a id="pageTitle" class="logo-title" href="..\index.html">LIVE2POST</a>
+        <p class="middleText">Create, Capture, Post</p>
+    </div>
+    <div id="signInModal" class="modal">
+        <form class="modal-content">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <div class="container">
+                <h1>Welcome Back</h1>
+                <hr>
+                <label for="Username" class="label">
+                            <b>Username</b>
+                        </label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+
+                <label for="psw" class="label">
+                            <b>Password</b>
+                        </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix" class="label">
+
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+            </div>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+            </div>
+        </form>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <span onclick="onCloseModalClicked()" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content-sigUp">
+                <div class="container-signUp">
+
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname" class="label">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                    <label for="Username" class="label">Username</label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw" class="label">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat" class="label">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="button" class="cancelbtn">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew">The Origin Of Blogging</h>
+        </div>
+        <div class="blogAuthor">
+            <button type="button" id="editPostClick" class="editPostButton" onclick="editPost()">Edit <i class="fa fa-edit"></i> </button>
+            <p>Anonymous</p>
+        </div>
+        <div class="blogText">
+            <p id="blogBody">
+                Vlogging saw a strong increase in popularity beginning in 2005. The most popular video sharing site, YouTube, was founded in February 2005. The site's co-founder Jawed Karim uploaded the first YouTube vlog clip Me at the zoo on his channel "jawed" in
+                April 2005.[14] The ordinary "everydayness" and "dry aesthetics" of Me at the zoo set the tone for the type of amateur vlogging content that would become typical of YouTube, especially among YouTubers.[15] By July 2006, YouTube had become
+                the fifth most popular web destination, with 100 million videos viewed daily and 65,000 new uploads per day.[16] The Yahoo! Videoblogging Group also saw its membership increase dramatically by August 2005.[17][18] Many open source content
+                management systems have enabled the inclusion of video content, allowing bloggers to host and administer their own video blogging sites. In addition, the convergence of mobile phones with digital cameras allows publishing of video content
+                to the Web almost as it is recorded.[19] Radio and television stations may use video blogging as a way to help interact more with listeners and viewers.[citation needed] YouTube has become a popular platform in order for people to express
+                their emotions to create a giant social community. It has created a place to bring strangers together to reassure each other of their own experiences for any time and place. The emotional exchange and support that Vloggers seek due to
+                a sizeable amount of friendly comments makes making bereavement Vlogs a united and common act.[20]
+
+
+            </p>
+        </div>
+        <div class="likeBlogButton">
+            <button id="likeBlog" onclick="postLiked()">
+      <i class="fa fa-thumbs-up"> LOVE</i> 
+      
+    </button>
+            <span id="commentCount">Be the first one to like this!</span>
+        </div>
+        <div class="commentContainer">
+            <form class="commentBody">
+                <label for="commentContent"></label>
+                <textarea placeholder="Write your reviews..." id="commentContent" rows="5" cols="80" name="Content"></textarea> <br>
+                <button type="button" class="newComment" onClick="addComment()">Comment</button>
+            </form>
+            <p class="allCommentsHeading">All Comments</p>
+            <div class="allCommentsBox" id="commentBox">
+                <div class="contentOfComment">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">
+    </script>
+</body>

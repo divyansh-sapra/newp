@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="main-container-div">
+        <div class="header">
+
+            <input id="signUpButtonClick" class="topButtons" type="button" onclick="openSignUpButton()" value="Sign Up" style="background-color: #818181;">
+            <input id="loginButtonClick" class="topButtons" type="button" onclick="openSignIn()" value="Sign In" style="background-color: #818181;">
+            <a id="pageTitle" class="logo-title" href="..\index.html" style="color: #fff">LIVE2POST</a>
+            <p class="middleText">Create, Capture, Post</p>
+        </div>
+    </div>
+    <div id="signInModal" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <div class="container">
+                <h1>Welcome Back</h1>
+                <hr>
+                <label for="Username">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix">
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+            </div>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+            </div>
+        </form>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <form class="modal-content-sigUp" action="/action_page.php">
+                <div class="container-signUp">
+                    <span onclick="onCloseModalClicked()" class="close" title="Close Modal">&times;</span>
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname">
+                        <b>Full Name</b>
+                    </label>
+                    <input type="text" placeholder="Enter First Name" name="Fullname" required>
+                    <label for="Username">
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw">
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat">
+                        <b>Confirm Password</b>
+                    </label>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="button" class="cancelbtn">Clear</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="allPostsContainer">
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username"> Anonymous</p>
+            </div>
+            <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">#VLOG: 1 </p>
+                <p class="post-desc">Vlogging saw a strong increase in popularity beginning in 2005. The most popular video sharing site, YouTube, was founded in February 2005. The site's co-founder Jawed Karim uploaded the first YouTube vlog clip Me at the zoo on his channel
+                    "jawed" in April 2005.[14] The ordinary "everydayness" and "dry aesthetics" of Me at the zoo set the tone for the type of amateur vlogging content that would become typical of YouTube, especially among YouTubers.[15] By July 2006,
+                    YouTube had become the fifth most popular web destination, with 100 million videos viewed daily and 65,000 new uploads per day.[16] The Yahoo! Videoblogging Group also saw its membership increase dramatically by August 2005.[17][18]
+                    Many open source content management systems have enabled the inclusion of video content, allowing bloggers to host and administer their own video blogging sites. In addition, the convergence of mobile phones with digital cameras allows
+                    publishing of video content to the Web almost as it is recorded.[19] Radio and television stations may use video blogging as a way to help interact more with listeners and viewers.[citation needed] YouTube has become a popular platform
+                    in order for people to express their emotions to create a giant social community. It has created a place to bring strangers together to reassure each other of their own experiences for any time and place. The emotional exchange and
+                    support that Vloggers seek due to a sizeable amount of friendly comments makes making bereavement Vlogs a united and common act.[20] 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix.</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username"> Anonymous</p>
+            </div>
+            <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">#VLOG: 2 </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
+                    and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British
+                    rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier
+                    feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349]
+                    He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's
+                    left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more
+                    than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+                    as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb
+                    42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username"> Anonymous</p>
+            </div>
+            <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">#VLOG: 3 </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
+                    and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British
+                    rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier
+                    feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349]
+                    He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's
+                    left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more
+                    than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+                    as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb
+                    42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username"> Anonymous</p>
+            </div>
+            <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">#VLOG: 4 </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
+                    and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British
+                    rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier
+                    feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349]
+                    He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's
+                    left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more
+                    than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+                    as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb
+                    42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username"> Anonymous</p>
+            </div>
+            <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">#VLOG: 5 </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability
+                    and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British
+                    rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier
+                    feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349]
+                    He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's
+                    left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more
+                    than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+                    as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb
+                    42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div id="deletePostPrompt" class="deletePrompt">
+            <form class="deleteContent" action="/action_page.php">
+
+                <div>
+                    <h1 class="deleteContainer">Are you sure you want to delete this post?</h1>
+                    <button type="submit" class="deleteButton">Yes</button>
+                    <button type="button" class="CancelDeleteButton" onclick="onCloseDeleteClicked()">No</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="..\js\bloglist.js">
+    </script>
+    <script src="..\js\header.js">
+    </script>
+</body>
+
+</html>
